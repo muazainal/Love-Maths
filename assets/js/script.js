@@ -27,5 +27,5 @@ function displaySubtractQuestion() {
 }
 
 function displayMultiplyQuestion() {
-    
+
 }
