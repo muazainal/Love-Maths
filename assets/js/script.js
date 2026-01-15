@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert("You clicked Submit!");
             } else {
                 let gameType = this.getAttribute("data-type");
-                alert(`You clicked ${gameType}`);
+                runGame(gameType);
             }
         })
     }
@@ -31,7 +31,7 @@ function runGame(gameType) {
     if (gameType === "addition") {
         displayAdditionQuestion(num1, num2);
     } else {
-        alert(`Unknown game type : ${gameType}`);
+        alert(`Unknown game type: ${gameType}`);
         throw `Unknown game type: ${gameType}. Aborting!`;
     }
  
@@ -41,7 +41,7 @@ function checkAnswer() {
 
 }
 
-function calsulateCorrectAnswer() {
+function calculateCorrectAnswer() {
 
 }
 
