@@ -91,8 +91,7 @@ function calculateCorrectAnswer() {
     return [operand1 * operand2, "multiply"];
   } else if (operator === "-") {
     return [operand1 - operand2, "subtract"];
-	document.getElementById("operator").textContent = "÷";
-  } else if (operator === "") {
+  } else if (operator === "÷") {
 	  return [operand1 / operand2, "division"];
 	} else {
     alert(`Unimplemented operator ${operator}`);
